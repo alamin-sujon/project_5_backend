@@ -33,7 +33,7 @@ const projectSchema = new mongoose_1.Schema({
         type: authorSchema,
         required: true,
     },
-    coreFeature: {
+    coreFeatures: {
         type: [String],
     },
     liveUrl: {
@@ -45,6 +45,10 @@ const projectSchema = new mongoose_1.Schema({
     },
     githubServer: {
         type: String,
+    },
+    technologies: {
+        type: [String],
+        required: true,
     },
 }, { timestamps: true });
 exports.Project = (0, mongoose_1.model)('Project', projectSchema);

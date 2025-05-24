@@ -32,7 +32,7 @@ const projectSchema = new Schema<IProject>(
       type: authorSchema,
       required: true,
     },
-    coreFeature: {
+    coreFeatures: {
       type: [String],
     },
     liveUrl: {
@@ -44,6 +44,10 @@ const projectSchema = new Schema<IProject>(
     },
     githubServer: {
       type: String,
+    },
+    technologies: {
+      type: [String],
+      required: true,
     },
   },
   { timestamps: true },

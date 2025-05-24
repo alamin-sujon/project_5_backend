@@ -8,7 +8,8 @@ export interface IProject {
     email: string;
   };
   description: string;
-  coreFeature: string[];
+  technologies: string[];
+  coreFeatures: string[];
   githubClient?: string;
   githubServer?: string;
 }
